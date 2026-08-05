@@ -1,3 +1,6 @@
+import pygame
+import asyncio
+
 player1 = input("First player name: ").strip()
 while not player1:
     player1 = input("Name needed: ").strip()
@@ -22,3 +25,29 @@ else:
     print("It's a tie!")
 
 print(f"The correct answer was {petofi_age}.")
+
+pygame.init()
+
+screen = pygame.display.set_mode((800, 600))
+clock = pygame.time.Clock()
+
+async def main():
+    running = True
+
+    while running:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                running = False
+
+        screen.fill((0, 0, 0))
+
+        # your game code here
+
+        pygame.display.flip()
+        clock.tick(60)
+
+        await asyncio.sleep(0)
+
+    pygame.quit()
+
+asyncio.run(main())
