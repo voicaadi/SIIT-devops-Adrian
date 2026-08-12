@@ -28,3 +28,11 @@ PART 2: CONDITIONALS & FILE CHECKS
        and create an empty file with that name.
    - Hint: Use 'if [ -f $1 ]' for the check.
 
+PART 3: LOOPS & AUTOMATION
+------------------------------------------------------------
+1. BULK CREATOR: Create a script named 'setup_project.sh'.
+   - Use a 'for' loop to create 5 directories named 
+     'module_1' through 'module_5'.
+   - Inside each directory, create an empty 'notes.md' file.
+   - Print a success message for every directory created.
+
