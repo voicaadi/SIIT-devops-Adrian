@@ -36,3 +36,9 @@ PART 3: LOOPS & AUTOMATION
    - Inside each directory, create an empty 'notes.md' file.
    - Print a success message for every directory created.
 
+2. DIRECTORY CLEANER: Create a script named 'cleanup.sh'.
+   - This script should look into a directory (provided as 
+     an argument).
+   - It should find all files ending in '.tmp' and delete them.
+   - It should count how many files were deleted and print 
+     the total to the user.
