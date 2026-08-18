@@ -42,3 +42,12 @@ PART 3: LOOPS & AUTOMATION
    - It should find all files ending in '.tmp' and delete them.
    - It should count how many files were deleted and print 
      the total to the user.
+PART 4: THE "MASTER" SCRIPT (INTEGRATION)
+------------------------------------------------------------
+1. SYSTEM REPORT: Create a script named 'report.sh'.
+   - This script should output the following to a file 
+     named 'system_report.txt':
+     - The current user logged in.
+     - The current working directory.
+     - The last 5 lines of your '.bash_history' or a list 
+       of currently running processes (top/ps).
