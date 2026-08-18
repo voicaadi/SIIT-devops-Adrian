@@ -1,0 +1,8 @@
+Current user: adi
+Current working directory: /home/adi/devops-course-project/Bash/SIIT-devops-Adrian/BashScripting
+Last 5 lines of .bash_history:
+ls
+nano README.md
+git add .
+git commit -m "readme"
+git push
