@@ -1,8 +1,10 @@
 #!/bin/bash
-size=$(stat -c%s "$1")
-x="$1"
+
+x="$@"
 if [ -f $1 ]; then
-	echo "File ${x} found and has $size bytes"
+	path=$(realpath "$x")
+	size=$(stat -c%s "$@")
+	echo "File ${x} found and has $size bytes and is $path"
 else
 	echo "File ${x} not found"
 fi
