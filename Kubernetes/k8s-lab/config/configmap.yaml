@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: group5-config
+  namespace: group5
+data:
+  STORAGE: "mysql"
+  DB_HOST: "mysql"
+  DB_PORT: "3306"
+  DB_USER: "group5"
+  DB_NAME: "group5"
